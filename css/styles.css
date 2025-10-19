@@ -1,3 +1,12 @@
+:root {
+  --text-color: #8e8f99;
+  --checked-bg-color: #404bbf;
+  --checked-fill-color: #f4f4fd;
+  --link-color: #4d5ae5;
+  --text-color: #8e8f99;
+  --overlay-text-color: #f4f4fd;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -661,19 +670,6 @@ a {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--text-color);
-  display: block;
-}
-
-.checkbox-box {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms ease;
 }
 
 .form-input-modal {
@@ -737,22 +733,6 @@ a {
   line-height: 1.3;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  border-radius: 2px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-:root {
-  --text-color: #8e8f99;
-  --checked-bg-color: #404bbf;
-  --checked-fill-color: #f4f4fd;
-  --link-color: #4d5ae5;
-  --text-color: #8e8f99;
-  --overlay-text-color: #f4f4fd;
 }
 
 span.checkbox-icon {
@@ -792,7 +772,6 @@ input[type='checkbox']:checked + .checkbox-container > .checkbox-icon {
 }
 .input-icon-wrapper {
   position: relative;
-  width: 360px;
 }
 .modal-button {
   display: block;
@@ -808,19 +787,14 @@ input[type='checkbox']:checked + .checkbox-container > .checkbox-icon {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin: 24px auto 0;
+  margin: 0 auto;
   padding: 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-label.modal-text {
-  display: block;
-}
 
-span.modal-text {
-  display: inline-flex;
-}
 .modal-text {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -828,23 +802,11 @@ span.modal-text {
   margin-bottom: 4px;
 }
 
-.form-label {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
 .form-field {
   display: flex;
   align-items: center;
   gap: 24px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
-  justify-content: center;
 }
 
 .form-input::placeholder {
